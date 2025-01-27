@@ -1,8 +1,8 @@
 def conta_vogais(texto):
-    # TODO: Defina um conjunto de vogais tanto minúsculas quanto maiúsculas:
+    #    Defina um conjunto de vogais tanto minúsculas quanto maiúsculas:
     vogais= ['a','e','i','o','u','A','B','E','I','O','U']
     
-    # TODO: Inicialize um contador para contar as vogais:
+    #    Inicialize um contador para contar as vogais:
     contador=0
     
     # Iteramos pelos caracteres da string
@@ -14,7 +14,7 @@ def conta_vogais(texto):
     return contador
 
 # Solicitamos ao usuário que insira uma string
-texto = input()
+texto = input('digite um texto: ')
 
 # Chamamos a função conta_vogais e exibimos o resultado
 resultado = conta_vogais(texto)
