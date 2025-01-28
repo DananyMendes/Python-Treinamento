@@ -6,6 +6,7 @@ def exibir_poema(data_extenso, *args, **kwargs):
 
 
 exibir_poema(
+    "Terca-feira, 28 de Janeiro de 2025",
     "Zen of Python",
     "Beautiful is better than ugly.",
     "Explicit is better than implicit.",
@@ -29,3 +30,22 @@ exibir_poema(
     autor="Tim Peters",
     ano=1999,
 )
+
+def calculadora(operacao, *args, **kwargs):
+    if operacao == "soma":
+        resultado = sum(args)
+    elif operacao == "multiplicacao":
+        resultado = 1
+        for num in args:
+            resultado *= num
+    else:
+        resultado = None
+
+    # Mensagem personalizada
+    mensagem = kwargs.get("mensagem", "Operação concluída.")
+    print(mensagem)
+    return resultado
+
+# Testando a calculadora
+print(calculadora("soma", 1, 2, 3, mensagem="Somando números..."))  # 6
+print(calculadora("multiplicacao", 2, 3, 4))                       # 24

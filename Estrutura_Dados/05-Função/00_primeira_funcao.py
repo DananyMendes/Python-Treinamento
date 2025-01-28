@@ -12,5 +12,7 @@ def exibir_mensagem_3(nome="Anônimo"):
 
 exibir_mensagem()
 exibir_mensagem_2(nome="Guilherme")
+exibir_mensagem_2(nome=input('Qual é o seu Nome: '))
+
 exibir_mensagem_3()
 exibir_mensagem_3(nome="Chappie")
