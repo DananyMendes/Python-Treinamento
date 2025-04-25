@@ -8,6 +8,3 @@ print(nome[10:16])
 print(nome[10:16:2])
 print(nome[:])
 print(nome[::-1])
-
-curso = "Python" 
-print(curso[::-1])

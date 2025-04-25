@@ -8,4 +8,4 @@ while opcao != 0:
     elif opcao == 2:
         print("Exibindo o extrato...")
 else:
-    print("Obrigado por usar nosso sistema bancário, até logo!")    
+    print("Obrigado por usar nosso sistema bancário, até logo!")
