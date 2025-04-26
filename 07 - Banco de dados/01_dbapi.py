@@ -3,7 +3,7 @@ from pathlib import Path
 
 ROOT_PATH = Path(__file__).parent
 
-conexao = sqlite3.connect(ROOT_PATH / "meu_banco.sqlite")
+conexao = sqlite3.connect(ROOT_PATH / "danilo.sqlite")
 cursor = conexao.cursor()
 cursor.row_factory = sqlite3.Row
 
@@ -56,9 +56,11 @@ print(dict(cliente))
 print(cliente["id"], cliente["nome"], cliente["email"])
 print(f'Seja bem vindo ao sistema {cliente["nome"]}')
 
-# dados = [
-#     ("Guilherme", "guilherme@gmail.com"),
-#     ("Chappie", "chappie@gmail.com"),
-#     ("Melaine", "melaine@gmail.com"),
-# ]
-# inserir_muitos(conexao, cursor, dados)
+dados = [
+    ("Guilherme", "guilherme@gmail.com"),
+    ("Chappie", "chappie@gmail.com"),
+    ("Melaine", "melaine@gmail.com"),
+    ("Giovana","gio.mendes@gmail.com"),
+    ("Giulia","giu.mendes@gmail.com")
+]
+inserir_muitos(conexao, cursor, dados)

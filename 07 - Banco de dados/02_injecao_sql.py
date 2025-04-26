@@ -3,7 +3,7 @@ from pathlib import Path
 
 ROOT_PATH = Path(__file__).parent
 
-conexao = sqlite3.connect(ROOT_PATH / "meu_banco.sqlite")
+conexao = sqlite3.connect(ROOT_PATH / "danilo.sqlite")
 cursor = conexao.cursor()
 cursor.row_factory = sqlite3.Row
 
